@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html lang="en_EN">
+
+<head>
+    <title>Moon by Zen Water</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Moon by Zen Water" />
+    <meta name="author" content="ZW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Moon" />
+    <meta name="theme-color" content="#5E33F7" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="images/favi.png" />
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display%7CMontserrat:400,700%7CRoboto:300,300i,400,400i,700,700i' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href='css/clear.css' />
+    <link rel="stylesheet" type="text/css" href='css/slick.css' />
+    <link rel="stylesheet" type="text/css" href='css/common.css' />
+    <link rel="stylesheet" type="text/css" href='css/sm-clean.css' />
+    <link href="style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-iphone-60x60.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-ipad-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-iphone-retina-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-ipad-retina-152x152.png">
+    <link rel="apple-touch-startup-image" href="images/iphone-startup.png">
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>            
+                <script src="js/respond.min.js"></script>    
+        <![endif]-->
+
+</head>
+
+<body class="page" onload="myFunction(); genQuote(); myFunctionPR();" ontouchstart=””>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // iOS web app full screen hacks.
+            if (window.navigator.standalone == true) {
+                // make all link remain in web app mode.
+                $('a').click(function() {
+                    window.location = $(this).attr('href');
+                    return false;
+                });
+            }
+        });
+
+    </script>
+
+
+    <div class="doc-loader"></div>
+
+
+    <div class="clear"></div>
+    </div>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Hello Martin, have <br>" + '<span style="font-family: ZEN2"> A NICE SUNDAY 😊</span>'
+            weekday[1] = "Hello Martin, have <br>" + '<span style="font-family: ZEN2"> A NICE MONDAY 😊</span>'
+            weekday[2] = "Hello Martin, have <br>" + '<span style="font-family: ZEN2"> A NICE TUESDAY 😊</span>'
+            weekday[3] = "Hello Martin, have <br>" + '<span style="font-family: ZEN2"> A NICE WEDNESDAY 😊</span>'
+            weekday[4] = "Hello Martin, have <br>" + '<span style="font-family: ZEN2"> A NICE THURSDAY 😊</span>'
+            weekday[5] = "Hello Martin, have <br>" + '<span style="font-family: ZEN2"> A NICE FRIDAY 😊</span>'
+            weekday[6] = "Hello Martin, have <br>" + '<span style="font-family: ZEN2"> A NICE SATURDAY 😊</span>'
+
+            var n = weekday[d.getDay()];
+            document.getElementById("den").innerHTML = n;
+        }
+
+    </script>
+
+
+
+    <script>
+        function genQuote() {
+            var randNum = Math.floor(Math.random() * 8) + 1;
+            document.getElementById('quote').innerHTML = quotes[randNum];
+
+        }
+
+        //quote array
+        var quotes = ["Blank", "\"Dude, suckin' at something is the first step at being sorta good at something.\"<br>-  Jake <small><em>(Adventure Time)</em></small>", "\"Either I will find a way, or I will make one.\"<br> - Philip Sidney", "\"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.\"<br>- Thomas A. Edison", "\"You are never too old to set another goal or to dream a new dream.\"<br>- C.S Lewis", "\"If you can dream it, you can do it.\"<br>- Walt Disney", "\"Never give up, for that is just the place and time that the tide will turn.\"<br>- Harriet Beecher Stowe", "\"I know where I'm going and I know the truth, and I don't have to be what you want me to be. I'm free to be what I want.\"<br>- Muhammad Ali", "\"If you always put limit on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them.\"<br>- Bruce Lee", ];
+
+    </script>
+
+
+
+    <div class="topnav" align='center'>
+        <a class="active" href="#" >still getting started?</a>
+    </div>
+
+
+
+    <div class="header-holder center-relative relative content-1140">
+        <div class="header-logo center-text">
+            <a href="dashboard.html">
+                <img id="userPhoto" src="images/profilc.jpg" alt="User Photo">
+            </a>
+        </div>
+
+        <div class="toggle-holder absolute">
+            <div id="toggle">
+                <div class="first-menu-line"></div>
+                <div class="second-menu-line"></div>
+                <div class="third-menu-line"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="content-1140 header-content center-relative block">
+        <h1 class="entry-title">
+            <p id="den" style="font-family: Zen1;"></p>
+        </h1>
+        <div class="page-desc">
+            <p style="font-size: 15px; font-weight: 300"><span></span>
+            </p>
+        </div>
+
+
+    </div>
+
+    <div id="content" class="site-content">
+        <ul class="grid" id="portfolio">
+            <li class="grid-item element-item animate">
+                <div class="item-wrapper">
+                    <a href="single-portfolio.html">
+                        <img src="images/img_01.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-text-holder">
+                        <div class="portfolio-info">
+                            <a class="portfolio-text" href="basecamp.html" target="_blank">Basecamp</a>
+
+                            <p class="portfolio-arrow">
+                                <a href="basecamp.html" target="_blank">
+                                    <img src="images/opta_arrow@2x.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item element-item animate">
+                <div class="item-wrapper">
+                    <a href="single-portfolio.html">
+                        <img src="images/img_02.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-text-holder">
+                        <div class="portfolio-info">
+                            <a class="portfolio-text" href="thebookofzen/index.html">The Book of ZEN</a>
+
+                            <p class="portfolio-arrow">
+                                <a href="thebookofzen/index.html">
+                                    <img src="images/opta_arrow@2x.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item element-item animate">
+                <div class="item-wrapper">
+                    <a href="single-portfolio.html">
+                        <img src="images/img_03.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-text-holder">
+                        <div class="portfolio-info">
+                            <a class="portfolio-text" href="https://meet.around.co/r/zen" target="_blank">Around</a>
+
+                            <p class="portfolio-arrow">
+                                <a href="https://meet.around.co/r/zen" target="_blank">
+                                    <img src="images/opta_arrow@2x.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item element-item quote-item animate">
+                <p id="quote"></p>
+            </li>
+            <li class="grid-item element-item animate">
+                <div class="item-wrapper">
+                    <a href="single-portfolio.html">
+                        <img src="images/img_04.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-text-holder">
+                        <div class="portfolio-info">
+                            <a class="portfolio-text" href="whereby.html" target="_blank">Whereby</a>
+                            <p class="portfolio-arrow">
+                                <a href="whereby.html" target="_blank">
+                                    <img src="images/opta_arrow@2x.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item element-item animate">
+                <div class="item-wrapper">
+                    <a href="single-portfolio.html">
+                        <img src="images/img_05.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-text-holder">
+                        <div class="portfolio-info">
+                            <a class="portfolio-text" href="sales.html">Sales</a>
+                            <p class="portfolio-arrow">
+                                <a href="sales.html">
+                                    <img src="images/opta_arrow@2x.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item element-item animate">
+                <div class="item-wrapper">
+                    <a href="single-portfolio.html">
+                        <img src="images/img_06.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-text-holder">
+                        <div class="portfolio-info">
+                            <a class="portfolio-text" href="website.html">Website</a>
+                            <p class="portfolio-arrow">
+                                <a href="website.html">
+                                    <img src="images/opta_arrow@2x.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item element-item animate">
+                <div class="item-wrapper">
+                    <a href="single-portfolio.html">
+                        <img src="images/img_07.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-text-holder">
+                        <div class="portfolio-info">
+                            <a class="portfolio-text" href="abroad/index.html" target="_blank">Going abroad</a>
+                            <p class="portfolio-arrow">
+                                <a href="abroad/index.html">
+                                    <img src="images/opta_arrow@2x.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item element-item animate">
+                <div class="item-wrapper">
+                    <a href="single-portfolio.html">
+                        <img src="images/img_08.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-text-holder">
+                        <div class="portfolio-info">
+                            <a class="portfolio-text" href="https://send.tresorit.com" target="_blank">Send Files</a>
+                            <p class="portfolio-arrow">
+                                <a href="https://send.tresorit.com" target="_blank">
+                                    <img src="images/opta_arrow@2x.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item element-item animate">
+                <div class="item-wrapper">
+                    <a href="single-portfolio.html">
+                        <img src="images/img_09.jpg" alt="" />
+                    </a>
+                    <div class="portfolio-text-holder">
+                        <div class="portfolio-info">
+                            <a class="portfolio-text" href="mailto:panic@zenwater.dk" target="_blank">Panic Button</a>
+                            <p class="portfolio-arrow">
+                                <a href="mailto:panic@zenwater.dk" target="_blank">
+                                    <img src="images/opta_arrow@2x.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </ul>
+        <div class="clear"></div>
+
+        <div class="clear"></div>
+    </div>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="footer-content content-1140 center-relative">
+            <div class="footer-logo">
+                <a href="dashboard.html">
+                    <img src="images/logous.png" alt="Zen">
+                </a>
+            </div>
+            <div class="footer-text">
+                <p class="footer-first-line">
+                    <a href="dashboard.html">Moon by <span style="font-family: Zen1;">Zen Water</span></a>
+                </p>
+                <p class="footer-second-line">
+                    <a href="security/index.html">security policies</a>
+            </div>
+            <ul class="copyright-holder">
+                <li align="center">
+                    © 2021 | Zen Water
+                </li>
+                <li>v 1.0</li>
+
+            </ul>
+        </div>
+    </footer>
+
+
+    <script type='text/javascript' src="js/jquery.min.js"></script>
+    <script type='text/javascript' src="js/jquery.fitvids.js"></script>
+    <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
+    <script type='text/javascript' src='js/imagesloaded.pkgd.js'></script>
+    <script type='text/javascript' src='js/slick.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+    <script type='text/javascript' src='js/app.js'></script>
+</body>
+
+</html>

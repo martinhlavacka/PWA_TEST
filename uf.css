@@ -1,0 +1,12 @@
+div {
+	margin-top: 50% !important;
+}
+
+
+html {
+	background: url(img/loading.gif) no-repeat center center fixed;
+	background-size: 123px;
+	-webkit-background-size: 123px;
+	-moz-background-size: 123px;
+	-o-background-size: 123px;
+}

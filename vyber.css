@@ -1,0 +1,66 @@
+/* Style Settings */
+@import url('http://fonts.googleapis.com/css?family=Playfair+Display%7CMontserrat:400,700%7CRoboto:300,300i,400,400i,700,700i');
+@font-face {
+  font-family: Zen1;
+  src: url(fonts/zen1.otf);
+}
+
+@font-face {
+  font-family: Zen2;
+  src: url(fonts/zen2.woff);
+}
+
+:root {
+    --bgColor: #FFF;
+    --accentColor: #5D33F2;
+    --font: 'Zen1';
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 100px;
+    border-radius: 50%;
+}
+
+#userName{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links{
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+.link{
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+}
+
+.link:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
