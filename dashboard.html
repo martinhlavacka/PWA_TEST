@@ -39,9 +39,9 @@
 
 </head>
 
-<body class="page" onload="myFunction(); genQuote(); myFunctionPR();" ontouchstart=””>
+<body class="page" onload="myFunction(); genQuote();">
     <script type="text/javascript">
-        $(document).ready(function() {
+        document.addEventListener("DOMContentLoaded", () => {
             // iOS web app full screen hacks.
             if (window.navigator.standalone == true) {
                 // make all link remain in web app mode.
